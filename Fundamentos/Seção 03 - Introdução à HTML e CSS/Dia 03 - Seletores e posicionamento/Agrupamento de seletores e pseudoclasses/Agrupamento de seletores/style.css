@@ -1,0 +1,15 @@
+.centralizar {
+  text-align: center;
+}
+
+li:hover {
+  background-color: gray;
+}
+
+li:active {
+  font-style: italic;
+}
+
+.none {
+  list-style: none;
+}

@@ -1,0 +1,33 @@
+div:hover {
+  border: 1px solid black;
+}
+
+#cor1 {
+  background-color: blue;
+}
+
+#cor2 {
+  background-color: violet;
+}
+
+#cor3 {
+  background-color: orange;
+  font-size: 50px;
+}
+
+#cor4 {
+  background-color: brown;
+}
+
+#cor5 {
+  background-color: aqua;
+}
+
+h3 {
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+div:nth-child(odd) {
+  font-style: italic;
+}

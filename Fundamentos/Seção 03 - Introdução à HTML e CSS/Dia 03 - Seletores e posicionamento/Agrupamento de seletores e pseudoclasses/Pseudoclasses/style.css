@@ -31,3 +31,23 @@ h3 {
 div:nth-child(odd) {
   font-style: italic;
 }
+
+#primaria {
+  font-weight: 300;
+}
+
+#secundaria {
+  font-size: 30px;
+}
+
+#complementar {
+  font-weight: 400;
+}
+
+#escura {
+  text-decoration:line-through;
+}
+
+#clara {
+  text-transform: uppercase;
+}

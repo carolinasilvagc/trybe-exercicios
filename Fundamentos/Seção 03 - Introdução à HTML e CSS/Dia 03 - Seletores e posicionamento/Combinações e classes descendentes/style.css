@@ -1,0 +1,60 @@
+ol {
+  background-color: yellow;
+}
+
+ol li:nth-child(odd) {
+  color: green;
+}
+
+ol li:nth-child(even) {
+  text-transform: uppercase;
+}
+
+h1, h3 {
+  color: red;
+}
+
+h1 em, h3 em {
+  font-size: 40px;
+  border: 1px solid black;
+}
+
+li {
+  font-size: 20px;
+}
+
+li em {
+  font-weight: bold;
+}
+
+#linguagens li:nth-child(1), #linguagens li:nth-child(2), #linguagens li:nth-child(3) {
+  color: blue;
+}
+
+.java {
+  background-color: violet;
+}
+
+#lista-aliados li a:hover {
+  font-weight: bold;
+}
+
+.stackoverflow:hover {
+  color: rgb(184, 93, 14)
+}
+
+.w3schools:hover {
+  color: rgb(3, 99, 3)
+}
+
+.mdn:hover {
+  color: black;
+}
+
+.devdocs:hover {
+  color: yellow;
+}
+
+.trybe:hover {
+  color: rgb(2, 67, 2)
+}

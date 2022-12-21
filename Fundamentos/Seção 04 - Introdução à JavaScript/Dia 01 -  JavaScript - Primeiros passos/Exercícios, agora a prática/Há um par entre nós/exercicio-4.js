@@ -1,23 +1,7 @@
-* Utilize if/else para escrever um código que defina três números em constantes e retorne true se pelo menos uma das três for par. Caso contrário, ele deve retornar false.
-Bonus: use somente um if.
-
-* Utilize if/else para escrever um código que defina três números em constantes e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele deve retornar false.
-Bonus: use somente um if.
-
-* Utilize if/else para escrever um código que se inicie com dois valores em duas constantes diferentes: o custo de um produto e seu valor de venda. A partir dos valores, calcule quanto de lucro (valor de venda, descontado o custo do produto) a empresa terá ao vender mil desses produtos.
-Atente que, sobre o custo do produto, incide um imposto de 20%.
-
-**Seu código também deve emitir uma mensagem de erro e encerrar caso algum dos seus valores de entrada seja menor que zero.**
-
-**O lucro de um produto é o resultado da subtração do valor de venda pelo custo do mesmo, sendo que o imposto de 20% também faz parte do valor de custo.**
-
-valorCustoTotal = valorCusto + impostoSobreOCusto;
-lucro = valorVenda - valorCustoTotal (lucro de um produto);
-
-* Utilize if/else para escrever um código que, dado um salário bruto, calcule o líquido a ser recebido.
+/* Utilize if/else para escrever um código que, dado um salário bruto, calcule o líquido a ser recebido.
 Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR.
 
-**A notação para um salário de R$1500,10, por exemplo, deve ser 1500.10. Para as faixas de impostos, use as seguintes referências:**
+A notação para um salário de R$1500,10, por exemplo, deve ser 1500.10. Para as faixas de impostos, use as seguintes referências:
 
 INSS (Instituto Nacional do Seguro Social)
 
@@ -58,4 +42,35 @@ O último cálculo para conseguir o salário líquido é R$ 2.670,00 - R$ 57,45 
 
 Resultado: R$ 2.612,55.
 
-De olho na dica 👀: que tal identificar as alíquotas com variáveis de nomes explicativos?
+De olho na dica 👀: que tal identificar as alíquotas com variáveis de nomes explicativos? */
+
+let aliquotINSS;
+let aliquotIR;
+
+const grossSalary = 2000.00;
+
+if (grossSalary <= 1556.94) {
+  aliquotINSS = grossSalary * 0.08;
+} else if (grossSalary <= 2594.92) {
+  aliquotINSS = grossSalary * 0.09;
+} else if (grossSalary <= 5189.82) {
+  aliquotINSS = grossSalary * 0.11;
+} else {
+  aliquotINSS = 570.88;
+}
+
+const baseSalary = grossSalary - aliquotINSS;
+
+if (baseSalary <= 1903.98) {
+  aliquotIR = 0;
+} else if (baseSalary <= 2826.65) {
+  aliquotIR = (baseSalary * 0.075) - 142.80;
+} else if (baseSalary <= 3751.05) {
+  aliquotIR = (baseSalary * 0.15) - 354.80;
+} else if (baseSalary <= 4664.68) {
+  aliquotIR = (baseSalary * 0.225) - 636.13;
+} else {
+  aliquotIR = (baseSalary * 0.275) - 869.36;
+};
+
+console.log("Salário: " + (baseSalary - aliquotIR));

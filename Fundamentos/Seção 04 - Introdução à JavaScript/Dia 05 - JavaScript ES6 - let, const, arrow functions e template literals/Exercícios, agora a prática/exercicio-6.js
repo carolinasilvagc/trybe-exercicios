@@ -1,14 +1,14 @@
-//🚀 Modifique a estrutura das funções a seguir para que elas sejam arrow functions;
+/* 🚀 Transforme a função hello em uma arrow function;
+Copie o código abaixo:
 
-//🚀 Transforme a função numeroAleatorio em uma arrow function;
-//Copie o código abaixo:
-
-/* function numeroAleatorio() {
-  return Math.random()
+function hello(nome) {
+  return `Olá, ${nome}!`
 }
-console.log(numeroAleatorio()); */
+let nome = 'Ivan';
+console.log(hello(nome)); */
 
-const numeroAleatorio = () => {
-  return Math.random();
+const hello = (nome) => {
+  return `Olá, ${nome}!`
 }
-console.log(numeroAleatorio());
+let nome = 'Ivan';
+console.log(hello(nome));

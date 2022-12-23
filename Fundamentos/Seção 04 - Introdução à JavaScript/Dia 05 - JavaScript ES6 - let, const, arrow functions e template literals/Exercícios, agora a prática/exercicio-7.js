@@ -1,14 +1,16 @@
-/* 🚀 Transforme a função hello em uma arrow function;
+/* 🚀 Transforme a função nomeCompleto em uma arrow function;
 Copie o código abaixo:
 
-function hello(nome) {
-  return `Olá, ${nome}!`
+function nomeCompleto(nome, sobrenome) {
+  return `${nome} ${sobrenome}`
 }
 let nome = 'Ivan';
-console.log(hello(nome)); */
+let sobrenome = 'Pires';
+console.log(nomeCompleto(nome, sobrenome)); */
 
-const hello = (nome) => {
-  return `Olá, ${nome}!`
+const nomeCompleto = (nome, sobrenome) => {
+  return `${nome} ${sobrenome}`
 }
 let nome = 'Ivan';
-console.log(hello(nome));
+let sobrenome = 'Pires';
+console.log(nomeCompleto(nome, sobrenome));

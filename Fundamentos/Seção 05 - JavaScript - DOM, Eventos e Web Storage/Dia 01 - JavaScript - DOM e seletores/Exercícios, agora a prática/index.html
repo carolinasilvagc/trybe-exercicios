@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+    <style>
+        main,
+        section {
+            border-color: black;
+            border-style: solid;
+        }
+        .title {
+            text-align: center;
+        }
+        .main-content {
+            background-color: yellow;
+        }
+        .main-content .center-content {
+            background-color: red;
+            width: 50%;
+            margin: 0 auto;
+        }
+        .main-content .center-content p {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="title">Desafio - JavaEscripito</h1>
+    </header>
+    <main class="main-content">
+        <section class="center-content">
+            <p>Texto padrão do nosso site</p>
+            <p>-----</p>
+            <p>Trybe</p>
+        </section>
+    </main>
+    <script>
+      const changeText = () => {
+        const paragraph2 = document.querySelectorAll(".center-content p");
+        paragraph2[1].innerText = "Me vejo como uma programadora em ascensão.";
+      };
+      changeText();
+
+      const changeMainColor = () => {
+        const mainColor = document.querySelectorAll(".main-content");
+        mainColor[0].style.backgroundColor = "rgb(76, 164, 109)";
+      };
+      changeMainColor();
+
+      const changeSectionColor = () => {
+        const sectionColor = document.querySelectorAll(".main-content .center-content");
+        sectionColor[0].style.backgroundColor = "white";
+      };
+      changeSectionColor();
+
+      const titleCorrection = () => {
+        const title = document.getElementsByClassName("title");
+        title[0].innerText = "Desafio - JavaScript"
+      };
+      titleCorrection();
+      
+      const changeFirstParagraph = () => {
+        const firstParagraph = document.querySelectorAll(".center-content p");
+        firstParagraph[0].innerHTML = firstParagraph[0].innerHTML.toUpperCase();
+      };
+      changeFirstParagraph();
+
+      const showParagraphsConsole = () => {
+        const tagsP = document.getElementsByTagName("p");
+        for(let index = 0; index < tagsP.length; index += 1){
+          console.log(tagsP[index].innerText);
+        };     
+      };
+      showParagraphsConsole();
+
+    </script>
+</body>
+</html>

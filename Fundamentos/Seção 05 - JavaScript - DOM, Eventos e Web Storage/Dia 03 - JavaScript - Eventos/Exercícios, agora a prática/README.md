@@ -51,8 +51,8 @@ O array decemberDaysList contém os dois últimos dias de novembro e os dias do 
 
 ## Parte 9
 **Implemente uma função que selecione uma tarefa;**
-* Adicione um evento que ao clicar no elemento com a tag `<div>` referente à cor da sua tarefa, atribua a esse elemento a classe task selected, ou seja, quando sua tarefa possuir a classe task selected ela estará selecionada;
-* Ao clicar novamente no elemento, a sua classe deverá voltar a ser somente task, ou seja, essa tarefa está deixando de ser uma tarefa selecionada.
+* Adicione um evento que ao clicar no elemento com a tag `<div>` referente à cor da sua tarefa, atribua a esse elemento a classe `task selected`, ou seja, quando sua tarefa possuir a classe `task selected` ela estará selecionada;
+* Ao clicar novamente no elemento, a sua classe deverá voltar a ser somente `task`, ou seja, essa tarefa está deixando de ser uma tarefa selecionada.
 
 
 ## Parte 10
